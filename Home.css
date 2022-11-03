@@ -5,7 +5,6 @@
 }
 
 body {
-  display: grid;
   background-image: url("pawel-czerwinski-BPrk2cOoCq8-unsplash.jpg") ;
 }
 .grid-page{
@@ -37,6 +36,7 @@ nav {
 
   /* Color */
   background-color: #151515;
+  z-index: 999;
 }
 
 .nav-text {
@@ -120,7 +120,6 @@ img {
   width: 100%;
   position: relative;
   border-radius: 1rem;
-  margin-bottom: 0.5rem;
 }
 
 
@@ -133,10 +132,7 @@ footer {
   color: #B4A5A5;
   
   /* Position */
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+
 
   /* Text */
   padding: 2rem;

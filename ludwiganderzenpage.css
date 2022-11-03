@@ -5,7 +5,7 @@
 }
 
 body {
-  display: grid;
+
   background-image: url("qingbao-meng-01_igFr7hd4-unsplash.jpg");
   background-size: 250rem 120rem
 }
@@ -14,6 +14,11 @@ body {
   /* grid  */
   display: grid;
   grid-template-rows: 80px 1fr ;
+  grid-template-areas: 
+  "nav nav nav"
+  ". content ."
+  "footer footer footer";
+
 }
 
 
@@ -21,6 +26,7 @@ nav {
   /* Text */
   font-weight: 600;
   color: #B4A5A5;
+  z-index: 2;
 
   /* Gaps & Position */
   position:fixed;
@@ -126,10 +132,6 @@ footer {
   color: #B4A5A5;
   
   /* Position */
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
 
   /* Text */
   padding: 2rem;
