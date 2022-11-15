@@ -32,7 +32,7 @@ nav {
   position:fixed;
   align-items: center;
   width: 100%;
-  height: 1.5rem;
+  height: 1rem;
   padding: 1rem;
 
   /* Color */
@@ -43,7 +43,7 @@ nav {
   /* nav-text */
   margin: 0;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .nav-home {
@@ -51,7 +51,7 @@ nav {
   inline-size: auto;
   float: left;
 }
-.nav-ludwiganderzen {
+.nav-ludwiganderzen, .nav-portfolio {
   /* nav-ludwiganderzen */
   float: right;
   inline-size: auto;

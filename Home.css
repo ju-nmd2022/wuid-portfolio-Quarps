@@ -11,7 +11,7 @@ body {
   
   /* grid  */
   display: grid;
-  grid-template-columns: 0.5fr 4fr 0.5fr;
+  grid-template-columns: 0.25fr 4fr 0.25fr;
   grid-template-rows: 80px 1fr 80px;
   grid-template-areas:
     'navv navv navv'
@@ -31,7 +31,7 @@ nav {
   position:fixed;
   align-items: center;
   width: 100%;
-  height: 1.5rem;
+  height: 1rem;
   padding: 1rem;
 
   /* Color */
@@ -42,7 +42,7 @@ nav {
 .nav-text {
   /* nav-text */
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .nav-home {
@@ -50,7 +50,7 @@ nav {
   inline-size: auto;
   float: left;
 }
-.nav-ludwiganderzen {
+.nav-ludwiganderzen, .nav-portfolio{
   /* nav-ludwiganderzen */
   float: right;
   inline-size: auto;
@@ -64,11 +64,12 @@ nav {
 }
 
 
+
 content {
   /* Define-grid */
   display: grid;
   grid-area: content;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   
   /* Color */
@@ -80,19 +81,19 @@ content {
 
 .box {
   /* Box-color  */
-  margin-top: 20rem;
+  margin-top: 10rem;
   background-color: rgb(43, 43, 43);
   color: #B4A5A5;
 
   /* Padding  */
-  padding: 1rem;
+  padding: 1.5rem;
 
   /* Apperance */
   border-radius: 1rem;
   height: auto;
 
   /* Text */
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center;
 }
@@ -103,7 +104,7 @@ content {
 }
 
 .desciption {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
