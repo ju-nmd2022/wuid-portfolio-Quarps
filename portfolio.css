@@ -1,0 +1,174 @@
+* {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #B4A5A5;
+}
+
+body {
+  background-image: url("mariola-grobelska-1rMxVipVZM8-unsplash.jpeg");
+  background-size: 150rem 100rem
+}
+.grid-page{
+  
+  /* grid  */
+  display: grid;
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-rows: 80px 90vh 80px;
+  grid-template-areas: 
+    "nav nav nav"
+    ". content ."
+    "footer footer footer";
+}
+
+nav {
+  /* Text */
+  font-weight: 600;
+  color: #B4A5A5;
+
+  /* Gaps & Position */
+  position:fixed;
+  align-items: center;
+  width: 100%;
+  height: 1rem;
+  padding: 1rem;
+  z-index: 99;
+
+  /* Color */
+  background-color: #151515;
+}
+
+.nav-text {
+  /* nav-text */
+  margin: 0;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.nav-home {
+  /* nav-portfolio */
+  inline-size: auto;
+  float: left;
+}
+.nav-ludwiganderzen, .nav-portfolio {
+  /* nav-ludwiganderzen */
+  float: right;
+  inline-size: auto;
+  margin-right: 1rem;
+}
+.nav-jonkoping {
+  /* nav-portfolio */
+  inline-size: auto;
+  float: right;
+  margin-right: 2rem;
+}
+
+
+content {
+  /* Define-grid */
+  display: grid;
+  grid-area: content;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* Gaps */
+  
+  grid-gap: 1rem;
+  margin: 0;
+}
+
+.box {
+  background-color: transparent;
+  position: relative;
+  color: #B4A5A5;
+  margin: 0;
+  height: 50%;
+  width: 100%;
+}
+
+.box-inner {
+  margin: 0;
+  background-color: transparent;
+  transition: all 0.8s ease;
+  transform-style: preserve-3d;
+  position: relative;
+
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.box:hover .box-inner {
+  transform: rotateY(180deg);
+}
+
+
+.box-front, .box-back {
+  position: absolute;
+  backface-visibility: hidden;
+
+  /* Extra */
+  padding: 1rem;
+  border-radius: 1rem;
+
+  /* Text */
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(43, 43, 43);
+  color: #B4A5A5;
+  width: 92.5%;
+
+  
+}
+
+.box-front {
+  text-align: center;
+}
+
+.box-back {
+  transform: rotateY(180deg);
+  height: 90%;
+}
+
+.desciption {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+.undertext {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #B4A5A5;
+}
+a:visited {
+  color: #B4A5A5;
+}
+
+
+img {
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+}
+
+
+footer {
+  /* Define-grid  */
+  grid-area: footer;
+
+  /* Colour */
+  background-color: #141414;
+  color: #B4A5A5;
+  
+  /* Position */
+
+
+  /* Text */
+  padding: 2rem;
+}
