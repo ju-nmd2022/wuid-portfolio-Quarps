@@ -12,7 +12,8 @@ body {
   
   /* grid  */
   display: grid;
-  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: 1rem 1fr 1rem;
+  grid-template-rows: 80px 100vh 80px;
   grid-template-areas: 
     "nav nav nav"
     ". content ."
@@ -64,44 +65,81 @@ nav {
 
 content {
   /* Define-grid */
+  align-items: start;
   display: grid;
   grid-area: content;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  
-  /* Color */
-
+  /* justify-content: center; */
   /* Gaps */
-  padding: 1rem;
+  
   grid-gap: 1rem;
+  margin: 0;
 }
 
 .box {
-  /* Box-color  */
-  background-color: rgb(43, 43, 43);
+  background-color: transparent;
+  position: relative;
   color: #B4A5A5;
+  margin: 0;
+  height: 50%;
+  width: 100%;
+}
 
-  /* Padding  */
+.box-inner {
+  margin: 0;
+  background-color: transparent;
+  transition: all 0.8s ease;
+  transform-style: preserve-3d;
+  position: relative;
+
+  /* Apperance */
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.box:hover .box-inner {
+  transform: rotateY(180deg);
+}
+
+
+.box-front, .box-back {
+  position: absolute;
+  backface-visibility: hidden;
+
+
+  /* Extra */
   padding: 1rem;
 
   /* Apperance */
   border-radius: 1rem;
-  height: auto;
 
   /* Text */
   font-size: 1rem;
   font-weight: 600;
+  background-color: rgb(43, 43, 43);
+  color: #B4A5A5;
+
+
+}
+
+
+.box-front {
   text-align: center;
 }
-.box:hover {
-  background-color: #171717;
-  opacity: 0.85;
-  cursor: pointer;
+
+/* Style the back side */
+.box-back {
+  transform: rotateY(180deg);
+  height: 150%;
 }
 
 .desciption {
   font-size: 0.8rem;
   font-weight: 500;
+}
+.undertext {
+  font-size: 0.8rem
 }
 
 a {
@@ -112,12 +150,14 @@ a:visited {
   color: #B4A5A5;
 }
 
+
 img {
-  height: 90%;
+  height: 80%;
   width: 100%;
   position: relative;
   border-radius: 1rem;
 }
+
 
 footer {
   /* Define-grid  */
