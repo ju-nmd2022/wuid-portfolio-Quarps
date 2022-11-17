@@ -13,7 +13,7 @@ body {
   /* grid  */
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
-  grid-template-rows: 80px 100vh 80px;
+  grid-template-rows: 80px 90vh 80px;
   grid-template-areas: 
     "nav nav nav"
     ". content ."
@@ -65,12 +65,10 @@ nav {
 
 content {
   /* Define-grid */
-  align-items: start;
   display: grid;
   grid-area: content;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  /* justify-content: center; */
   /* Gaps */
   
   grid-gap: 1rem;
@@ -93,9 +91,9 @@ content {
   transform-style: preserve-3d;
   position: relative;
 
-  /* Apperance */
   border-radius: 1rem;
   height: 100%;
+  width: 100%;
 }
 
 .box:hover .box-inner {
@@ -107,11 +105,8 @@ content {
   position: absolute;
   backface-visibility: hidden;
 
-
   /* Extra */
   padding: 1rem;
-
-  /* Apperance */
   border-radius: 1rem;
 
   /* Text */
@@ -119,27 +114,32 @@ content {
   font-weight: 600;
   background-color: rgb(43, 43, 43);
   color: #B4A5A5;
+  width: 92.5%;
 
-
+  
 }
-
 
 .box-front {
   text-align: center;
 }
 
-/* Style the back side */
 .box-back {
   transform: rotateY(180deg);
-  height: 150%;
+  height: 90%;
 }
 
 .desciption {
   font-size: 0.8rem;
   font-weight: 500;
 }
+
+h1 {
+  font-size: 1.5rem;
+}
 .undertext {
-  font-size: 0.8rem
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -152,7 +152,6 @@ a:visited {
 
 
 img {
-  height: 80%;
   width: 100%;
   position: relative;
   border-radius: 1rem;
