@@ -22,6 +22,7 @@ body {
 
 nav {
   /* Define-grid */
+  font-weight: 600;
   grid-area: navv;
 
   /* Text */
@@ -43,6 +44,22 @@ nav {
   /* nav-text */
   justify-content: center;
   font-size: 1rem;
+}
+.nav-text::after {
+  content: '';
+  height: 1px;
+  width: 0%;
+  background-color: #B4A5A5;
+  display: block;
+  transition: .25s ease-in-out;
+}
+.nav-text:hover::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: orange;
+  display: block;
+  transition: .5s ease-in-out;
 }
 
 .nav-home {
