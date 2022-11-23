@@ -1,19 +1,14 @@
 * {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   margin: 0;
   color: #B4A5A5;
 }
 
 body {
-  background-image: url("Gamebackground.jpeg");
-}
-
-.grid-page{
-  
   /* grid  */
   display: grid;
-  grid-template-columns: 0.25fr 4fr 0.25fr;
-  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: 0rem 4fr 0rem;
+  grid-template-rows: 3rem 95vh 0rem;
   grid-template-areas:
     'navv navv navv'
     ". content ."
@@ -44,7 +39,11 @@ nav {
   justify-content: center;
   font-size: 1rem;
 }
-
+.nav-game {
+  margin-left: 1rem;
+  inline-size: auto;
+  float: left;
+}
 .nav-home {
   /* nav-portfolio */
   inline-size: auto;
@@ -61,4 +60,136 @@ nav {
   inline-size: auto;
   float: right;
   margin-right: 2rem;
+}
+.nav-text::after {
+  content: '';
+  height: 1px;
+  width: 0%;
+  background-color: #B4A5A5;
+  display: block;
+  transition: .25s ease-in-out;
+}
+.nav-text:hover::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: orange;
+  display: block;
+  transition: .5s ease-in-out;
+}
+
+content {
+  background-image: url("Image/Gamebackground.jpg");
+  background-size: cover;
+  background-position-y: center;
+  display: grid;
+  grid-area: content;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "a1 a2 a3 a4 a5 a6 a7 a8"
+  "b1 b2 b3 b4 b5 b6 b7 b8"
+  "c1 c2 c3 c4 c5 c6 c7 c8"
+  "d1 d2 d3 d4 d5 d6 d7 d8"
+  "e1 e2 e3 e4 e5 e6 e7 e8"
+  "f1 f2 f3 f4 f5 f6 f7 f8";
+}
+a {
+  text-decoration: none;
+}
+
+.circle {
+  background-color: transparent;
+  border: 4px solid rgb(157, 157, 157);
+  box-shadow: 2px 2px 2px black;
+  border-radius: 50%;
+  margin: 0;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+.circle:hover {
+  scale: 1.05;
+  background-color: #dddddd;
+  opacity: 70%;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px black;
+}
+.circle-text {
+  margin-top: 40%;
+  color: rgb(35, 35, 35);
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: oblique;
+}
+.cafe-box {
+  display: flex;
+  grid-area: d3 / d3 / e4 / d4;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0;
+  margin-left: 2rem;
+
+}
+
+.church-box {
+  display: flex;
+  grid-area: d2 / d2 / e3 / c3;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0;
+  margin-top: 6.5rem;
+  margin-right: 7rem;
+}
+
+.hotel-box {
+  display: flex;
+  grid-area: d5 / d5 / e6 / c6;
+  background-color: transparent;
+  margin: 0;
+  margin-left: 10rem;
+}
+
+.fort-box {
+  display: flex;
+  grid-area: a7 / a7 / a8 / b8;
+  background-color: transparent;
+  margin: 0;
+  justify-content: center;
+  margin-left: 6rem;
+  margin-top: 5rem;
+}
+
+.item-box {
+  grid-area: a1 / a1 / a2 / b2;
+}
+
+.item-frame {
+  background-color: #151515;
+  height: 5rem;
+  width:100%;
+  margin-top: 2.5rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  padding: 1.5rem;
+}
+
+.passporthidden-icon-frame {
+  height: 75px;
+  text-align: center;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.gunhidden-icon-frame {
+  height: 60px;
+  text-align: center;
+  position: relative;
+  margin-left: 3rem;
+}
+
+.moneybaghidden-icon-frame {
+  height: 80px;
+  text-align: center;
+  position: relative;
+  margin-left: 3rem;
 }

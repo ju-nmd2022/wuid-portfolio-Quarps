@@ -1,0 +1,85 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  color: #B4A5A5;
+}
+
+body {
+  /* grid  */
+  display: grid;
+  grid-template-columns: 0rem 4fr 0rem;
+  grid-template-rows: 3rem 95vh 0rem;
+  grid-template-areas:
+    'navv navv navv'
+    ". content ."
+    "footer footer footer";
+}
+
+nav {
+  /* Text */
+  font-weight: 600;
+  color: #B4A5A5;
+
+  /* Gaps & Position */
+  position:fixed;
+  align-items: center;
+  width: 100%;
+  height: 1rem;
+  padding: 1rem;
+  z-index: 99;
+
+  /* Color */
+  background-color: #151515;
+  grid-area: navv;
+}
+
+.nav-text {
+  /* nav-text */
+  margin: 0;
+  justify-content: center;
+  font-size: 1rem;
+}
+.nav-game {
+  margin-left: 1rem;
+  inline-size: auto;
+  float: left;
+}
+.nav-home {
+  /* nav-portfolio */
+  inline-size: auto;
+  float: left;
+}
+.nav-ludwiganderzen, .nav-portfolio {
+  /* nav-ludwiganderzen */
+  float: right;
+  inline-size: auto;
+  margin-right: 1rem;
+}
+.nav-jonkoping {
+  /* nav-portfolio */
+  inline-size: auto;
+  float: right;
+  margin-right: 2rem;
+}
+.nav-text::after {
+  content: '';
+  height: 1px;
+  width: 0%;
+  background-color: #B4A5A5;
+  display: block;
+  transition: .25s ease-in-out;
+}
+.nav-text:hover::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: orange;
+  display: block;
+  transition: .5s ease-in-out;
+}
+
+content {
+  background-image: url("/Image/Gamebackground.jpg");
+  background-size: cover;
+  background-position-y: center;
+}
