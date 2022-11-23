@@ -13,7 +13,7 @@ body {
   /* grid  */
   display: grid;
   grid-template-columns: 1rem 1fr 1rem;
-  grid-template-rows: 80px 100vh 80px;
+  grid-template-rows: 80px 105vh 80px;
   grid-template-areas: 
     "nav nav nav"
     ". content ."
