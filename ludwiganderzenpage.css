@@ -67,6 +67,11 @@ nav {
   inline-size: auto;
   float: left;
 }
+.nav-game {
+  margin-left: 1rem;
+  inline-size: auto;
+  float: left;
+}
 .nav-ludwiganderzen, .nav-portfolio {
   /* nav-ludwiganderzen */
   float: right;
