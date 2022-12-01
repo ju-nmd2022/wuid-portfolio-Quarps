@@ -129,7 +129,6 @@ a {
   background-color: transparent;
   margin: 0;
   margin-left: 2rem;
-
 }
 
 .church-box {
@@ -161,16 +160,17 @@ a {
 }
 
 .item-box {
-  grid-area: a1 / a1 / a2 / b2;
+  grid-area: a1 / a1 / a3 / b3;
 }
 
 .item-frame {
-  background-color: #151515;
+  background-color: #303030b0;
   height: 5rem;
-  width:100%;
+  width:75%;
   margin-top: 2.5rem;
   border-radius: 0rem 1rem 1rem 0rem;
   padding: 1.5rem;
+  align-items: center;
 }
 
 .passporthidden-icon-frame {
@@ -191,5 +191,28 @@ a {
   height: 80px;
   text-align: center;
   position: relative;
-  margin-left: 3rem;
+  margin-left: 4rem;
+}
+
+.reset-box {
+  grid-area: a4 / a4 / a5 /a5;
+  display: flex;
+  justify-content: center;
+}
+
+.reset-button {
+  border: none;
+  width: 50%;
+  height: 25%;
+  background-color: rgba(108, 65, 0, 0.85);
+  border-radius: 0rem 0rem 1rem 1rem;
+  color:#151515;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: oblique;
+}
+.reset-button:hover {
+  cursor: pointer;
+  background-color: rgba(108, 65, 0, 0.60);
+  scale: 1.1;
 }

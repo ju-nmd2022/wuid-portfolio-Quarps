@@ -79,7 +79,123 @@ nav {
 }
 
 content {
-  background-image: url("/Image/Gamebackground.jpg");
-  background-size: cover;
+  background-image: url("Image/Background.png");
+  background-size:cover;
   background-position-y: center;
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 25rem 25rem 25rem 1fr;
+  grid-template-rows: 8rem 6.5rem 35rem 10rem;
+  grid-template-areas: 
+  "icon item2 item item1 ."
+  ". text text text . "
+  ". sara elias linus ."
+  ". . . . ." ;
+  grid-gap: 1rem;
+}
+.card-sara {
+  display: flex;
+  background-color: #212121;
+  grid-area: sara;
+  position: relative;
+  border: black solid 1rem;
+  border-radius: 2rem;
+}
+.card-elias {
+  display: flex;
+  background-color: #212121;
+  grid-area: elias;
+  position: relative;
+  border: black solid 1rem;
+  border-radius: 2rem;
+}
+.card-linus {
+  display: flex;
+  background-color: #212121;
+  grid-area: linus;
+  position: relative;
+  border: black solid 1rem;
+  border-radius: 2rem;
+}
+.img-card {
+  position: relative;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+.item-frame {
+  display: flex;
+  justify-content: center;
+  background-color: #303030d3;
+  grid-area: item / item / item ;
+  border-radius: 0 0rem 1rem 1rem;
+  height: 7.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.passporthidden-icon-frame {
+  height: 75px;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.gunhidden-icon-frame {
+  height: 60px;
+  position: relative;
+}
+
+.moneybaghidden-icon-frame {
+  height: 80px;
+  position: relative;
+  margin-left: 1rem;
+}
+.btn-card{
+  display: flex;
+  position: absolute;
+  top: 82%;
+  width: 100%;
+  justify-content: center;
+  background-color:#212121;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  border-top: #000000 0.5rem solid;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: oblique;
+  }
+.btn-card:hover {
+  background-color: rgba(58, 35, 0);
+}
+
+.arrow-icon {
+  grid-area: icon;
+  position: relative;
+  width: 2.5rem;
+  margin: 1.5rem 0rem 0rem 1rem;
+  rotate: 180deg;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.arrow-icon:hover {
+  background-color: rgba(121, 121, 121, 0.5);
+  cursor: pointer;
+}
+.text-card {
+  display: flex;
+  grid-area: text / text / text;
+  justify-content: center;
+  position: relative;
+}
+.text{
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: oblique;
+  color: white;
+  background-color: #303030d3;
+  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  height: 50%;
 }

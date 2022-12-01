@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="game.css" />
+    <script src="game.js" defer></script>
     <title>Game</title>
   </head>
   <body>
@@ -26,14 +27,23 @@
       </a>
     </nav>
     <content>
+      <div class="reset-box">
+        <button id="restart" class="reset-button">Restart</button>
+      </div>
       <div class="item-box">
         <div class="item-frame">
           <img
+            id="passport"
             class="passporthidden-icon-frame"
             src="Image/Passporthidden.png"
           />
-          <img class="gunhidden-icon-frame" src="Image/Gunhidden.png" />
           <img
+            id="gun"
+            class="gunhidden-icon-frame"
+            src="Image/Gunhidden.png"
+          />
+          <img
+            id="moneyBag"
             class="moneybaghidden-icon-frame"
             src="Image/Moneybaghidden.png"
           />
@@ -49,7 +59,7 @@
       </div>
       <!-- CHURCH-->
       <div class="church-box">
-        <a href="/Game/church.html">
+        <a id="churchButton" href="/Game/church.html">
           <div class="circle">
             <p class="circle-text church-text">CHURCH</p>
           </div>
@@ -57,7 +67,7 @@
       </div>
       <!-- HOTEL -->
       <div class="hotel-box">
-        <a href="/Game/hotel.html">
+        <a id="hotelButton" href="/Game/hotel.html">
           <div class="circle">
             <p class="circle-text hotel-text">HOTEL</p>
           </div>
@@ -65,7 +75,7 @@
       </div>
       <!-- FORT -->
       <div class="fort-box">
-        <a href="/Game/fort.html">
+        <a id="fortButton" href="/Game/fort.html">
           <div class="circle">
             <p class="circle-text fort-text">FORT</p>
           </div>

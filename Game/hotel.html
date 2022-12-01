@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="hotel.css" />
+    <script src="game.js" defer></script>
     <title>Hotel</title>
   </head>
   <body>
@@ -26,18 +27,51 @@
       </a>
     </nav>
     <content>
-      <div class="item-box">
-        <div class="item-frame">
+      <div>
+        <a href="/Game/game.html">
           <img
-            class="passporthidden-icon-frame"
-            src="Image/Passporthidden.png"
+            src="Image/right-arrow.png"
+            alt="arrow back"
+            class="arrow-icon"
           />
-          <img class="gunhidden-icon-frame" src="Image/Gunhidden.png" />
-          <img
-            class="moneybaghidden-icon-frame"
-            src="Image/Moneybaghidden.png"
-          />
-        </div>
+        </a>
+      </div>
+      <div class="item-frame">
+        <img
+          id="passport"
+          class="passporthidden-icon-frame"
+          src="Image/Passporthidden.png"
+        />
+        <img id="gun" class="gunhidden-icon-frame" src="Image/Gunhidden.png" />
+        <img
+          id="moneyBag"
+          class="moneybaghidden-icon-frame"
+          src="Image/Moneybaghidden.png"
+        />
+      </div>
+      <div class="text-card">
+        <p class="text">Hu looks money?</p>
+      </div>
+      <div class="card-sara">
+        <img src="Image/saracharacter.png" alt="sara" class="img-card" />
+        <button id="btnhotel1" class="btn-card">
+          Sara<br />
+          (agent)
+        </button>
+      </div>
+      <div class="card-elias">
+        <img src="Image/eliascharacter.png" alt="elias" class="img-card" />
+        <button id="btnhotel2" class="btn-card">
+          Elias<br />
+          (entrepreneur)
+        </button>
+      </div>
+      <div class="card-linus">
+        <img src="Image/linuscharacter.png" alt="sara" class="img-card" />
+        <button id="btnhotel3" class="btn-card">
+          Linus<br />
+          (vegan)
+        </button>
       </div>
     </content>
   </body>
