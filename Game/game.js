@@ -203,11 +203,11 @@ if ( typeof (btnfort) != "undefined" && btnfort !=null) {
   if(mathRandom === 0) {
     reset()
     alert("BIG NOOB YOUR SUBMARINE HAVE SUNKEN");
-    window.open("Game/index.html");
+    window.open("index.html");
     window.location.reload(true);
   }
   else if (mathRandom === 1 && state.items.passport === true && state.items.gun === true && state.items.moneyBag === true){
-    window.open("Game/endscen.html");
+    window.open("endscen.html");
   }
   else {
     reset()
