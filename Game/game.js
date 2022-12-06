@@ -207,7 +207,7 @@ if ( typeof (btnfort) != "undefined" && btnfort !=null) {
     window.location.reload(true);
   }
   else if (mathRandom === 1 && state.items.passport === true && state.items.gun === true && state.items.moneyBag === true){
-    window.open("xendscen.html");
+    window.open("endscen.html");
   }
   else {
     reset()
