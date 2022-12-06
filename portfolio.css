@@ -198,3 +198,29 @@ footer {
   /* Text */
   padding: 2rem;
 }
+
+/* jennelie noob code */
+@media screen and (max-width:1200px){
+  content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width:600px){
+  content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 27rem;
+  }
+  body {
+    display: grid;
+    grid-template-rows: 80px 100vh 80px;
+  }
+  footer {
+    visibility: hidden;
+  }
+}
