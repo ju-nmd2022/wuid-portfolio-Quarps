@@ -88,7 +88,7 @@ if (state.items.passport === false) {
   churchButton.href = "#";
 }
 else {
-  churchButton.href = "/Game/church.html"
+  churchButton.href = "church.html"
 }
 
 //alert
@@ -108,7 +108,7 @@ if (state.items.gun === false) {
   hotelButton.href = "#";
 }
 else {
-  hotelButton.href = "/Game/hotel.html"
+  hotelButton.href = "hotel.html"
 }
 
 //alert
@@ -124,7 +124,7 @@ const fortButton = document.getElementById('fortButton');
 
 if( typeof (fortButton) != "undefined" && fortButton !=null) {
 if (state.items.passport === true && state.items.gun === true && state.items.moneyBag === true) {
-  fortButton.href = "/Game/fort.html"
+  fortButton.href = "fort.html"
 }
 else {
   console.log(state);
@@ -207,7 +207,7 @@ if ( typeof (btnfort) != "undefined" && btnfort !=null) {
     window.location.reload(true);
   }
   else if (mathRandom === 1 && state.items.passport === true && state.items.gun === true && state.items.moneyBag === true){
-    window.open("endscen.html");
+    window.open("xendscen.html");
   }
   else {
     reset()
